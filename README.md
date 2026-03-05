@@ -3,7 +3,7 @@
 A **production-style Node.js authentication API** built using **Express.js, MongoDB, and JWT**.
 This project demonstrates how to implement **secure user authentication, protected routes, and role-based access control (RBAC)** using a clean **MVC architecture**.
 
-This backend was built as part of backend learning to understand **real-world authentication systems used in modern web applications.**
+This backend project was built as part of backend learning to understand **real-world authentication systems used in modern web applications**.
 
 ---
 
@@ -17,29 +17,29 @@ This backend was built as part of backend learning to understand **real-world au
 * Role-Based Access Control (Admin / User)
 * MongoDB Database Integration
 * Environment Variables Configuration
-* Clean MVC Folder Structure
 * Centralized Error Handling
+* Clean MVC Folder Structure
 
 ---
 
 # 🧰 Tech Stack
 
-**Backend**
+### Backend
 
 * Node.js
 * Express.js
 
-**Database**
+### Database
 
 * MongoDB
 * Mongoose
 
-**Authentication**
+### Authentication
 
 * JSON Web Token (JWT)
 * bcryptjs
 
-**Other Tools**
+### Other Tools
 
 * dotenv
 * cors
@@ -53,22 +53,22 @@ This backend was built as part of backend learning to understand **real-world au
 Backend-with-JWT-Authentication-API
 │
 ├── config
-│   └── db.js                # MongoDB connection
+│   └── db.js
 │
 ├── controllers
-│   └── authController.js   # Business logic
+│   └── authController.js
 │
 ├── middleware
-│   ├── authMiddleware.js   # JWT verification
-│   └── errorMiddleware.js  # Global error handler
+│   ├── authMiddleware.js
+│   └── errorMiddleware.js
 │
 ├── models
-│   └── User.js             # User schema
+│   └── User.js
 │
 ├── routes
-│   └── authRoutes.js       # Authentication routes
+│   └── authRoutes.js
 │
-├── server.js               # Application entry point
+├── server.js
 ├── package.json
 ├── .env
 └── README.md
@@ -78,25 +78,21 @@ Backend-with-JWT-Authentication-API
 
 # ⚙️ Installation
 
-### 1️⃣ Clone the repository
+Clone the repository
 
-```bash
+```
 git clone https://github.com/webdevMitesh/Backend-with-JWT-Authentication-API.git
 ```
 
----
+Go to project folder
 
-### 2️⃣ Navigate to project folder
-
-```bash
+```
 cd Backend-with-JWT-Authentication-API
 ```
 
----
+Install dependencies
 
-### 3️⃣ Install dependencies
-
-```bash
+```
 npm install
 ```
 
@@ -118,13 +114,13 @@ JWT_SECRET=your_secret_key
 
 # ▶️ Running the Server
 
-Run development server:
+Run development server
 
-```bash
+```
 npm run dev
 ```
 
-Server will run at:
+Server will run on
 
 ```
 http://localhost:5000
@@ -134,13 +130,13 @@ http://localhost:5000
 
 # 📡 API Endpoints
 
-## Register User
+### Register User
 
 ```
 POST /api/auth/register
 ```
 
-Request Body:
+Example Request
 
 ```json
 {
@@ -153,13 +149,13 @@ Request Body:
 
 ---
 
-## Login User
+### Login User
 
 ```
 POST /api/auth/login
 ```
 
-Request Body:
+Example Request
 
 ```json
 {
@@ -168,7 +164,7 @@ Request Body:
 }
 ```
 
-Response Example:
+Example Response
 
 ```json
 {
@@ -184,13 +180,13 @@ Response Example:
 
 ---
 
-## Get User Profile (Protected Route)
+### Get User Profile (Protected Route)
 
 ```
 GET /api/auth/profile
 ```
 
-Headers:
+Header
 
 ```
 Authorization: Bearer TOKEN
@@ -198,7 +194,7 @@ Authorization: Bearer TOKEN
 
 ---
 
-## Admin Route (Role Protected)
+### Admin Route (Role Protected)
 
 ```
 GET /api/auth/admin
@@ -210,12 +206,12 @@ Accessible only by users with **admin role**.
 
 # 🔐 Authentication Flow
 
-1️⃣ User registers or logs in
-2️⃣ Server generates a **JWT token**
-3️⃣ Client stores the token
-4️⃣ Token is sent in **Authorization Header**
-5️⃣ Middleware verifies token
-6️⃣ Access granted to protected routes
+1. User registers or logs in
+2. Server generates a **JWT token**
+3. Client stores the token
+4. Token is sent in **Authorization header**
+5. Middleware verifies token
+6. Access granted to protected routes
 
 ---
 
@@ -227,7 +223,7 @@ Accessible only by users with **admin role**.
 * Password Hashing
 * Role-Based Authorization (RBAC)
 * MVC Architecture
-* Environment Configuration
+* Environment Variables
 
 ---
 
@@ -237,7 +233,7 @@ Accessible only by users with **admin role**.
 
 MERN Stack Developer
 
-GitHub:
+GitHub
 https://github.com/webdevMitesh
 
 ---
